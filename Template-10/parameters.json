@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "javaPackageName": {
+      "value": "openjdk-13-jdk"
+    },
+    "tomcatPackageName": {
+      "value": "tomcat9"
+    },
+    "adminUsername": {
+      "value": "azureuser"
+    },
+    "adminPasswordOrKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDPcS0CevSWLMWBrH2s/6yieERfoo3WqC6c7p3/4rFo1jmVkOryWjfSjiJp2SJ6+uVBfDv1ckTQ4mq89sYZ9WbxgjfUeJnoC7uvH1Dc+xhm1HkDTBmfcoCtS8ae6eekH0sP5E84VGMcaxJ8tB533k0Xp/R8I6Zzydj7d5JNwgkmWHC74hqY0+MdQ/RY6NcBVXWSgya/X+g6bX5m/s2RPeS9H8CvV9z5HV9JA2Lcr80iAGokGuWveri7WX2cJOsHrj56tan16UDjCX/PotOna7Kzvpgb8pBV5InAtHVvU7Rw/W0OlucLKjRbZx8/wgzuxD2JPJbcrwd5tvEbZKiJxrP7LM5ymVbaLA0k67josFjHxOox9D51Cz/nxLLIQb6dSWCNU/8DpHc6NT7kG1QmVrGwA0og7Djbeda357JcQT2enBdX5nCSya3CI7RM/WpC8K5ma751h+g4bBQ2b9DdfBY2MUoCheeirt1+3Np8codhN/UqQIn1ErRmsgBpzl7vUSM= generated-by-azure"
+    }
+  }
+}

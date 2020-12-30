@@ -1,0 +1,1 @@
+Remove-AzResourceGroup -Name 'vishhrg' -Force -AsJob

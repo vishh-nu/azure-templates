@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "projectName":{
+        "value": "EXETEST"
+      },
+      
+"vNetName": {
+    "value": "EXETEST-Vnet"
+},
+      "adminUsername1": {
+        "value": "azureuser1"
+      },
+      "adminUsername2": {
+        "value": "azureuser2"
+      },
+      "adminUsername3": {
+        "value": "azureuser3"
+      },
+      "adminUsername4": {
+        "value": "azureuser4"
+      },
+      "adminPublicKey": {
+            "value":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDPcS0CevSWLMWBrH2s/6yieERf\r\noo3WqC6c7p3/4rFo1jmVkOryWjfSjiJp2SJ6+uVBfDv1ckTQ4mq89sYZ9WbxgjfU\r\neJnoC7uvH1Dc+xhm1HkDTBmfcoCtS8ae6eekH0sP5E84VGMcaxJ8tB533k0Xp/R8\r\nI6Zzydj7d5JNwgkmWHC74hqY0+MdQ/RY6NcBVXWSgya/X+g6bX5m/s2RPeS9H8Cv\r\nV9z5HV9JA2Lcr80iAGokGuWveri7WX2cJOsHrj56tan16UDjCX/PotOna7Kzvpgb\r\n8pBV5InAtHVvU7Rw/W0OlucLKjRbZx8/wgzuxD2JPJbcrwd5tvEbZKiJxrP7LM5y\r\nmVbaLA0k67josFjHxOox9D51Cz/nxLLIQb6dSWCNU/8DpHc6NT7kG1QmVrGwA0og\r\n7Djbeda357JcQT2enBdX5nCSya3CI7RM/WpC8K5ma751h+g4bBQ2b9DdfBY2MUoC\r\nheeirt1+3Np8codhN/UqQIn1ErRmsgBpzl7vUSM= generated-by-azure\r\n"
+    },
+      "networkSecurityGroupRules": {
+        "value": [
+            {
+                "name": "default-allow-ssh",
+                "properties": {
+                    "priority": 1000,
+                    "protocol": "TCP",
+                    "access": "Allow",
+                    "direction": "Inbound",
+                    "sourceApplicationSecurityGroups": [],
+                    "destinationApplicationSecurityGroups": [],
+                    "sourceAddressPrefix": "*",
+                    "sourcePortRange": "*",
+                    "destinationAddressPrefix": "*",
+                    "destinationPortRange": "22"
+                }
+            }
+        ]
+    },
+    "osDiskType": {
+        "value": "Standard_LRS"
+    },
+    "virtualMachineSize": {
+        "value": "Standard_E2s_v3"
+    },
+    "autoShutdownStatus": {
+        "value": "Enabled"
+    },
+    "autoShutdownTime": {
+        "value": "22:00"
+    },
+    "autoShutdownTimeZone": {
+        "value": "India Standard Time"
+    },
+    "autoShutdownNotificationStatus": {
+        "value": "Disabled"
+    },
+    "autoShutdownNotificationLocale": {
+        "value": "en"
+    }
+}
+    }
+  

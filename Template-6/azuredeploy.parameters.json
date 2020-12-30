@@ -1,0 +1,46 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "projectName":{
+        "value": "VishhDevops6"
+      },
+      "adminUsername": {
+        "value": "azureuser"
+      },
+      "adminPublicKey": {
+        "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDQ+4gzqfhBITjoG3k3OfCTNJ8Qv3+5vPHPQ8dqIPFu1Pswwmo8oV2vxjq4d9kA85HH7byovDsfP4ALhdjrULT9zl2sbN5XpzRbYMQWhWd7yZKfhn3xkSKLTZbHoldXY0oOmqCsBpYilns6LiJaQrWC1yFBN3aO7wOwhb9mCFBqy9BOaart3il3IrRvtJZR0AKIzPfzI6k1DCYakBoIvf7+svaIXMTg42eaWx1z6SpWy81/CaDP7vcACA4BolHCQknzxba+9wTi/rdswb4YBjVNzYLv3og+gz7TDAkZc32dwqFvFu8KGRHyXF1jMCSA+nGk7+Kwldsjv0a7lcHYImgqnUNBday5BSGLYgYjoFq2AKwZMqMevkWuZLTICxnhYuDaB9TEQ3WB5CZUI2Se+vRdkQRULEcMG3Q+VWdcAmwIXgKfrroactwEt3ffQO1DCkCfYL0AZ/NhQWk/co3ht609CMFDcsqPbOWIsthpsrqcMCc0LLuQPDw8uKOAI0UFMHbFuRQ2JexaSTVnt9rjMb6B0223sHSffgps0rqImbmPwrj+fUp9PmGCvNSe8I4S82AomYUHnWfk0+HhETlKk+r9VPE8a79gBO4tScnd97H9bu3IYe6XsNzFfb330f2O2ol6oIxh/N0NFW2wdGhhdU2rOcEjWVnbs2esHainhvgJ0w== vishnu.k@IXEDLAP00396"
+      },
+      "applicationGatewayName": {
+        "value": "VishhAG"
+      },
+      "applicationGatewaySize": {
+        "value": "Standard_Small"
+      },
+      "applicationGatewayInstanceCount": {
+        "value": 1
+      },
+      "frontendPort": {
+        "value": 80
+      },
+      "backendPort": {
+        "value": 80
+      },
+      "backendIPAddresses": {
+        "value": [
+          {
+            "IpAddress": "10.0.0.7"
+          },
+          {
+            "IpAddress": "10.0.0.8"
+          },
+          {
+            "IpAddress": "10.0.0.9"
+          }
+        ]
+      },
+      "cookieBasedAffinity": {
+        "value": "Disabled"
+      }
+    }
+  }
